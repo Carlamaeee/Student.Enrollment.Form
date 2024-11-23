@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+    
+    <section class="Instructions">
+        <ol>
+            <li>Fill in the form fields.</li>
+            <li>Check your interests.</li>
+            <li>Click "Enroll Now" to submit.</li>
+        </ol>
+    </section>
+
+    <section class="Form">
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age" required>
+
+            <label>Sex:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="sex" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="Female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <label for="course">Course Options:</label>
+            <select id="course" name="course">
+                <option value="BSIT">BSIT</option>
+                <option value="BSSW">BSSW</option>
+                <option value="BSPA">BSPA</option>
+                <option value="BSA">BSA</option>
+                <option value="BSAIS">BSAIS</option>
+                <option value="ABELS">ABELS</option>
+            </select>
+
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="webdev" name="interests" value="Web Development">
+                <label for="webdev">Web Development</label>
+                <input type="checkbox" id="law" name="interests" value="Law">
+                <label for="law">Law</label>
+                <input type="checkbox" id="balance" name="interests" value="Mathematics">
+                <label for="balance">Mathematics</label>
+                <input type="checkbox" id="graphics" name="interests" value="Graphic Design">
+                <label for="graphics">Graphic Design</label>
+            </div>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+    </section>
+
+    <section class="Student-records">
+        <h3>Student Records</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>023A</td>
+                    <td>Charles Quin</td>
+                    <td>charlesquine@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development, Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>023B</td>
+                    <td>Jana Kale</td>
+                    <td>janakale@gmail.com</td>
+                    <td>18</td>
+                    <td>Female</td>
+                    <td>BSPA</td>
+                    <td>Law</td>
+                </tr>
+                <tr>
+                    <td>023C</td>
+                    <td>Micha Cruz</td>
+                    <td>michacruz@gmail.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSPA</td>
+                    <td>Law</td>
+                </tr>
+                <tr>
+                    <td>023D</td>
+                    <td>Bea Del Vega</td>
+                    <td>beadelvega@gmail.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSSW</td>
+                    <td>Law</td>
+                </tr>
+                <tr>
+                    <td>023E</td>
+                    <td>Clyde Marquez</td>
+                    <td>clyde@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSAIS</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>023F</td>
+                    <td>Joshua Manalo</td>
+                    <td>manao@gmail.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>ABELS</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>023G</td>
+                    <td>Nasha Aniela</td>
+                    <td>nasha@gmail.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSA</td>
+                    <td>Mathematics</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
